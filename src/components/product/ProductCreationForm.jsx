@@ -23,7 +23,11 @@ const ProductCreationForm = () => {
   }
 
   return (
-    <Container title="Toote lisamise vorm" maxWidth="400px">
+    <Container
+      title="Toote lisamise vorm"
+      maxWidth="400px"
+      className={styles.grid}
+    >
       <form onSubmit={handleSubmit} className={styles.form}>
         <div>
           <label htmlFor="url">Pildi link</label>
