@@ -3,7 +3,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
   grid-auto-rows: 1fr;
-  margin: 1rem;
 }
 
 /* Tablet screens */
