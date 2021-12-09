@@ -11,6 +11,7 @@ const formatAsCurrency = (
     minimumFractionDigits,
     maximumFractionDigits,
     currency,
+    style: 'currency',
   })
 }
 
