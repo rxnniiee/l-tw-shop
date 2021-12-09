@@ -1,0 +1,14 @@
+.main {
+  position: relative;
+  color: var(--color-text-primary);
+  padding: 1rem;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-secondary);
+  border-radius: var(--rounding-primary);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
