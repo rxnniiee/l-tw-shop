@@ -5,6 +5,7 @@
   background-color: var(--color-primary);
   border: 2px solid var(--color-secondary);
   border-radius: var(--rounding-primary);
+  height: min-content;
 }
 
 .title {
