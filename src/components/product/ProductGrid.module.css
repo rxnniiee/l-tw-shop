@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: 1fr;
+  margin: 1rem;
+}
+
+/* Tablet screens */
+@media only screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile L screens */
+@media only screen and (max-width: 425px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile S screens */
+@media only screen and (max-width: 320px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
