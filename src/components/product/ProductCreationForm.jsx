@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './ProductCreationForm.module.css'
 import { useDispatch } from 'react-redux'
 import { productsActions } from '../../app/features/productsSlice'
+import Container from '../container/Container'
 
 const ProductCreationForm = () => {
   const dispatch = useDispatch()
@@ -15,12 +16,15 @@ const ProductCreationForm = () => {
         image: event.target.image.value,
       })
     )
+    // puhasta vormi väljad
+    event.target.name.value = ''
+    event.target.price.value = ''
+    event.target.image.value = ''
   }
 
   return (
-    <div className={styles.container}>
-      <h4 className={styles.heading}>Toote lisamise vorm</h4>
-      <form onSubmit={handleSubmit}>
+    <Container title="Toote lisamise vorm" maxWidth="400px">
+      <form onSubmit={handleSubmit} className={styles.form}>
         <div>
           <label htmlFor="url">Pildi link</label>
           <input required type="url" name="image" id="image" />
@@ -42,7 +46,7 @@ const ProductCreationForm = () => {
         </div>
         <button type="submit">Lisa</button>
       </form>
-    </div>
+    </Container>
   )
 }
 
