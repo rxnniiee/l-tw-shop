@@ -27,3 +27,35 @@ code {
   margin: 0;
   padding: 0;
 }
+
+#root {
+  max-width: 1280px;
+  margin: auto;
+}
+
+button {
+  -webkit-appearance: none;
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--rounding-primary);
+  color: var(--color-primary);
+  background: none;
+  background-color: var(--color-accent);
+  outline-offset: 3px;
+  outline-color: var(--color-accent);
+}
+
+input {
+  width: 100%;
+  outline-color: var(--color-accent);
+  line-height: 1.5rem;
+  padding: 2px 0.5rem;
+  font-size: 0.9rem;
+  border-radius: var(--rounding-primary);
+  border: 2px solid var(--color-secondary);
+}
+
+form label {
+  display: block;
+}
