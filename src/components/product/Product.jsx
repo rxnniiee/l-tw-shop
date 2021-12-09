@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Product.module.css'
+import Container from '../container/Container'
 import { useDispatch } from 'react-redux'
 import { productsActions } from '../../app/features/productsSlice'
 import { cartActions } from '../../app/features/cartSlice'
@@ -9,7 +10,7 @@ const Product = ({ id, name, price, image }) => {
   const dispatch = useDispatch()
 
   return (
-    <div className={styles.container}>
+    <Container>
       <button
         className={styles.delete}
         onClick={() => dispatch(productsActions.remove(id))}
@@ -31,7 +32,7 @@ const Product = ({ id, name, price, image }) => {
           Lisa ostukorvi
         </button>
       </div>
-    </div>
+    </Container>
   )
 }
 
