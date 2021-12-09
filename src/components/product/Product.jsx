@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Product.module.css'
 import { useDispatch } from 'react-redux'
 import { productsActions } from '../../app/features/productsSlice'
+import { cartActions } from '../../app/features/cartSlice'
 import { formatAsCurrency } from '../../utils/numbers'
 
 const Product = ({ id, name, price, image }) => {
@@ -23,7 +24,12 @@ const Product = ({ id, name, price, image }) => {
       <div className={styles.description}>
         <p>{name}</p>
         <h4>{formatAsCurrency(price)}</h4>
-        <button className={styles.button}>Lisa ostukorvi</button>
+        <button
+          className={styles.button}
+          onClick={() => dispatch(cartActions.add(id))}
+        >
+          Lisa ostukorvi
+        </button>
       </div>
     </div>
   )
