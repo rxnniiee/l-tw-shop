@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
+:root {
+  --color-primary: #ffffff;
+  --color-accent: #6087ff;
+  --color-secondary: #f1f1f3;
+
+  --color-text-primary: #6c6c6c;
+
+  --rounding-primary: 5px;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
 }
 
 code {
