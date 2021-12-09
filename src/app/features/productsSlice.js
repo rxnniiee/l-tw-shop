@@ -6,9 +6,9 @@ const initialState = {
   list: [
     {
       id: 'MeHOXJin61TxDB11',
-      name: 'Adidas kaitsemask',
-      price: 19.9,
-      image: 'https://i.imgur.com/P9KCh64.png',
+      name: 'Sony PlayStation 5',
+      price: 529.9,
+      image: 'https://i.imgur.com/e2S9BB8.png',
     },
     {
       id: 'd2Z5UtI5aJfNyVCv',
