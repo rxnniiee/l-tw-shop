@@ -1,0 +1,21 @@
+.app {
+  margin: 1rem;
+  display: grid;
+  grid-template-areas:
+    'a b b c'
+    'd d d d';
+  row-gap: 1rem;
+  grid-template-columns: repeat(4, 25%);
+}
+
+/* Tablet screens */
+@media only screen and (max-width: 768px) {
+  .app {
+    grid-template-areas:
+      'a'
+      'b'
+      'c'
+      'd';
+    grid-template-columns: repeat(1, 100%);
+  }
+}
