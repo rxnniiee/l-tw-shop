@@ -10,7 +10,7 @@ const Product = ({ id, name, price, image }) => {
   const dispatch = useDispatch()
 
   return (
-    <Container>
+    <Container className={styles.product}>
       <button
         className={styles.delete}
         onClick={() => dispatch(productsActions.remove(id))}
